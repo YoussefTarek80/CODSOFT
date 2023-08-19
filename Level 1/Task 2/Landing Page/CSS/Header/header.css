@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Edu+SA+Beginner:wght@500&family=Handjet:wght@300;500&display=swap');
+header{
+    padding: 20px;
+    background-color: white;
+}
+header a{
+    text-decoration: none;
+    color: black;
+
+}
+nav{
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: white;
+
+}
+.header-logo h3{
+    font-size: 30px ;
+    font-family: 'Borel', cursive;
+}
+.header-logo span{
+    color: #794bc4;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+    
+}
+.header-links ul{
+    display: flex;
+    list-style: none;
+}
+.header-links ul li{
+    transition: 0.4s ease;
+    font-size: 18px ;
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.header-links ul li::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    position: relative;
+    background-color: #794bc4;
+    transform: scale(0);
+    transition: .5s ease;
+    transform-origin: left;
+}
+.header-links ul li:hover::after{
+    
+    transform: scale(1);
+} 
+.header-links ul li i{
+    font-size: 18px ;
+    color: black;
+}
+
+nav button{
+    padding: 15px;
+    font-size: 20px;
+    color: #794bc4;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid #794bc4;
+    background-color: transparent;
+    cursor: pointer;
+    width: 10%;
+    transition: 0.3s ease;
+}
+nav button:hover{
+    background-color: #794bc4;
+    color: white;
+}
+
+i[class*="bars"] {
+    font-size: 30px;
+    display: none;
+}
+@media (max-width:772px){
+    .header-links ul li{
+        display: none;
+    }
+    nav button{
+        width: 30%;
+        font-size: 15px;
+        padding: 6px;
+    }
+    .header-logo h3{
+        font-size: 20px ;
+        font-family: 'Borel', cursive;
+    }
+    i[class*="bars"] {
+        font-size: 20px;
+        display: block;
+    }
+}
+

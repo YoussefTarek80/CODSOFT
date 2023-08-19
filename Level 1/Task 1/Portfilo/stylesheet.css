@@ -1,0 +1,343 @@
+@import 'https://fonts.googleapis.com/css?family=Preahvihear';
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background: #a663e4;
+}
+::-webkit-scrollbar-thumb {
+    background: #2C1250;
+}
+body{
+    background-color: #11071F;
+    font-family: 'Preahvihear';
+    color: white;
+}
+
+section{
+    padding-top: 100px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*Start Nav bar*/
+header{
+    background-color: #1A0B2E;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    padding: 20px;
+}
+nav ul li::after {
+    content: '';
+    height: 4px;
+    background-color: #763CAC;
+    width: 100%;
+    display: block;
+    transform: scale(0);
+    transition: .5s ease;
+    transform-origin: left;
+}
+nav ul li:hover::after {
+    transform: scale(1);
+}
+@media (max-width: 1000px) {
+    nav ul li{
+        display: none;
+    }
+    nav img {
+        margin: auto;
+    }
+}
+/*End Nav bar*/
+
+/*Start Home*/
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 30px;
+}
+.Home img{
+    width: 40rem;
+    filter: drop-shadow(70px 70px 40px #1c1c56);
+}
+.Info{
+    width: 50%;
+}
+.Info span{
+    font-size: 30px;
+}
+.Info p:nth-child(3){
+   color: rgba(128, 128, 128, 0.847);
+   margin-top: 50px;
+}
+.Home button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-top: 40px;
+    width: 70%;
+    background-color: #763CAC;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.Home button:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 1000px) {
+    .Home img{
+        width: 20rem;
+        
+    }
+    .Info{
+        width: 80%;
+    }
+  }
+/*End Home*/
+.work{
+    margin-left: 30px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+    
+}
+.card{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background:linear-gradient(to right,#4f228db1,#130428);
+}
+.card .card-info{
+    width: 20rem;
+}
+.card .card-info p{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.591);
+}
+.card .card-info button{
+    padding: 10px;
+    background-color: #2C1250;
+    border: 1px solid #693B93;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.card .card-info button:hover{
+    background-color: #693B93;
+}
+@media (max-width: 1000px) {
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-top: 20px;
+        
+    }
+    .card{
+        width: 80%;
+    }
+  }
+/*Start Work*/
+.skills{
+    margin-left: 30px;
+}
+.skills-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.Skills-end-box{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px #a663e4;
+    margin: 20px;
+    text-align: center;
+    max-height: 340px;
+    overflow: auto;
+    padding: 10px;
+}
+.Skills-end-box i{
+    font-size: 40px;
+    margin: 20px;
+    color: #a663e4;
+}
+.Skills-end-box .Icon span{
+    font-size: 30px;
+    margin: 20px;
+    color: #a663e4;
+}
+
+.Skills-end-box::-webkit-scrollbar {
+    width: 15px;
+}
+.Skills-end-box::-webkit-scrollbar-track {
+    background: #a663e4;
+}
+.Skills-end-box::-webkit-scrollbar-thumb {
+    background: #2C1250;
+    border-radius: 0px 10px 10px 0px;
+}
+@media (max-width: 1000px) {
+    .skills-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        margin-top: 20px;
+    }
+    .Skills-end-box{
+        width: 80%;
+    }
+  }
+
+.projects{
+    margin-left: 30px;
+}
+.all-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: 40px;
+}
+.project:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.project:nth-child(4){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.project-content{
+    width: 50%;
+    /* margin: 10px; */
+}
+.project-content p{
+    color: rgba(255, 255, 255, 0.47);
+    
+}
+.project-content a i{
+  margin-top: 20px;
+}
+.project img{
+    width: 30rem;
+    height: 20rem;
+    margin: 10px;
+    border-radius: 50%;
+}
+@media (max-width: 1000px) {
+    .project img{
+        width: 20rem;
+        height: 10rem;
+    }
+    .project-content{
+        width: 100%;
+        /* margin: 10px; */
+    }
+
+  }
+.contact-me{
+    margin-left: 30px;
+}
+.inputs-fields{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputs-fields input,textarea{
+    padding: 10px;
+    border: 1px solid #a663e47e;
+    outline: none;
+    margin: 10px;
+    width: 50%;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    resize: none;
+}
+.inputs-fields button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    width: 50%;
+    background-color: #763CAC;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.inputs-fields button:hover{
+    transform: scale(1.1);
+}
+::placeholder{
+    color: white;
+}
+@media (max-width: 1000px) {
+    .inputs-fields input,textarea{
+
+        width: 90%;
+
+    }
+
+  }
+footer{
+    margin-top: 40px;
+    background-color: #1A0B2E;
+    text-align: center;
+    line-height: 3rem;
+}
+footer .links a{
+    margin: 10px;
+    font-size: 20px;
+}
+.copyright {
+    color: rgba(128, 128, 128, 0.708);
+}

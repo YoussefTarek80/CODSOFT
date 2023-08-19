@@ -1,0 +1,67 @@
+.Feature{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Feature p{
+    color: rgba(128, 128, 128, 0.584);
+}
+.feacture-title{
+    width: 20rem;
+    font-size: 20px;
+    color: #794bc4;
+}
+.Feature .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Feature .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blanchedalmond; */
+    padding: 10px;
+    margin: 10px;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 6px 0 20px 0px black;
+    border-radius: 30px;
+    
+    
+}
+.Feature .card img{
+    width: 40%; 
+    filter: drop-shadow(20px 4px 4px #794bc46e);
+    position: relative;
+    animation: animate 2s infinite;
+}
+
+.Feature .card p{
+    width: 40%; 
+    font-size: 20px;
+    color: black;
+    align-self: self-start;
+    margin: 20px;
+    font-weight: 600;
+}
+@keyframes animate{
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 40px;
+    }
+    100%{
+        top: 0;
+    }
+}
+@media (max-width:1100px){
+    .cards{
+        margin-top: 40px;
+    }
+}

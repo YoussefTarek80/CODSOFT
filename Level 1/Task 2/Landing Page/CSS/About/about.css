@@ -1,0 +1,61 @@
+.About{
+    margin:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.About img{
+    width: 40%;
+}
+.content{
+    width: 30rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Box_1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Box_1 p,.Box_2 p{
+    font-size:30px ;
+    font-weight: 700;
+    color: #592ba2;
+}
+.Box_1 p span,.Box_2 p span{
+    color: #ce4bb8;
+}
+.Box_1 button,.Box_2 button{
+    padding: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ce4bb8;
+    color: white;
+    border: none;
+    transition: .5s ease;
+}
+.Box_1 button:hover,.Box_2 button:hover{
+    transform: scale(1.1);
+    letter-spacing: .2rem;
+}
+.Box_2{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+@media (max-width:1100px){
+    .About img{
+        width: 100%;
+    }
+}

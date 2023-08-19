@@ -1,0 +1,98 @@
+.plans{
+    margin-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+.plans .header{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+.plans .header h1{
+    font-size: 40px;
+    color: #592ba2;
+}
+.plans .header h1 span{
+    font-size: 40px;
+    color: #ce4bb8;
+}
+.plans .header p{
+    color: rgba(128, 128, 128, 0.815);
+}
+.plans .cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.plans .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: blanchedalmond; */
+    padding: 20px;
+    margin: 30px;
+    width: 20rem;
+    /* height: 20rem; */
+    box-shadow: 6px 0 20px 0px black;
+    border-radius: 30px;
+}
+.plans .card .head{
+    text-align: center;
+    
+}
+.plans .card .head h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.plans .card .head p{
+    color: rgba(128, 128, 128, 0.815);
+    margin-top: 10px;
+}
+.plans .card .price{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+.plans .card .price span{
+    color: #ce4bb8;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.plans .card .price p{
+    color: black;
+    font-size: 20px;
+}
+.plans .card .options{
+    
+}
+.plans .card .option{
+    margin: 20px;
+    
+}
+.plans .card .option i{
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.plans .card .option i[class*="xmark"]{
+    color: red;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.plans button{
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width:90%;
+    background-color: #ce4bb8;
+    color: white;
+    border: none;
+}
